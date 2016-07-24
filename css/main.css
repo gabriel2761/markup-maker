@@ -1,0 +1,6 @@
+#command-input {
+    display: flex;
+    position: fixed;
+    width: 1px;
+    left: -30px;
+}
