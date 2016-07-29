@@ -9,6 +9,7 @@ $(function() {
     commandListener.insertModeListener(function(key) {
         console.log(key);
         editor.insert(key);
+
     });
 
 });
