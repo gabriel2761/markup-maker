@@ -13,6 +13,7 @@
 }
 
 #editor-view {
+    font-family: 'Inconsolata', Arial;
     border: 2px green solid;
     width: 50%;
 }
