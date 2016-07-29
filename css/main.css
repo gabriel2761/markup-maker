@@ -4,3 +4,20 @@
     width: 1px;
     left: -30px;
 }
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 97vh;
+    border: 1px red solid;
+}
+
+#editor-view {
+    border: 2px green solid;
+    width: 50%;
+}
+
+#markdown-view {
+    border: 2px blue solid;
+    width: 50%;
+}
