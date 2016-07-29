@@ -16,9 +16,16 @@
     font-family: 'Inconsolata', Arial;
     border: 2px green solid;
     width: 50%;
+    padding: 12px;
 }
 
 #markdown-view {
     border: 2px blue solid;
     width: 50%;
+}
+
+.character {
+    display: inline-block;
+    font-size: 22px;
+    margin: 1px;
 }
