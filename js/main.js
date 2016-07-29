@@ -1,8 +1,14 @@
 $(function() {
     var commandListener = new CommandInputListener();
 
+    commandListener.normalModeListener(function(key) {
+        console.log('command ' + key);
+    });
 
-    commandListener.insertModeListener();
-    commandListener.normalModeListener();
+    commandListener.insertModeListener(function(key) {
+        console.log(key);
+    });
+
+
 
 });

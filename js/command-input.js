@@ -21,30 +21,30 @@ var CommandInputListener = function() {
             case 'COMMAND':
                 focusInsertMode();
                 break;
-            default:
-                break;
         }
     });
 
-    this.normalModeListener = function(command) {
+    this.normalModeListener = function(callback) {
         $normalModeInput.on('input', function() {
             switch(this.value) {
                 case 'i':
                     focusInsertMode();
                     break;
+                default:
+                    callback(this.value);
+                    break;
             }
-            console.log('command: ' + this.value);
             this.value = '';
         });
     };
 
-    this.insertModeListener = function(key) {
+    this.insertModeListener = function(callback) {
         $insertModeInput.on('input', function() {
-            console.log(this.value);
+            callback(this.value);
             this.value = '';
         });
 
-        $insertModeInput.keydown(function(event) {
+        $insertModeInput.keydown(function(callback) {
             switch(event.keyCode) {
                 case 27:
                     focusNormalMode();
