@@ -10,7 +10,8 @@
 </head>
 <body>
 
-    <input id="command-input"/>
+    <input id="normal-mode" class="input-listener"/>
+    <input id="insert-mode" class="input-listener">
 
     <main class="main-container">
         <div id="editor-view"></div>
@@ -18,6 +19,7 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/command-input.js"></script>
     <script src="js/editor-view.js"></script>
     <script src="js/markdown-view.js"></script>
     <script src="js/main.js"></script>

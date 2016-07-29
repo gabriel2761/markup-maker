@@ -1,3 +1,8 @@
-document.addEventListener('click', function() {
-    document.getElementById('command-input');
+$(function() {
+    var commandListener = new CommandInputListener();
+
+
+    commandListener.insertModeListener();
+    commandListener.normalModeListener();
+
 });
